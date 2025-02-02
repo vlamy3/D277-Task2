@@ -1,0 +1,127 @@
+:root {
+    --var1: #FFEBD3;
+    --var2: #FFB4AC;
+    --var3: #679186;
+    --var4: #264E70;
+}
+
+
+.NavBar {
+    color: var(--var1);
+    background-color: var(--var4);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: small-caps;
+      
+}
+
+a {
+    color: var(--var1);
+    text-decoration: none;
+    font-family: "Nova Round", system-ui;
+}
+
+
+a {
+    a {
+        color: #000066; /* Navy Blue */
+        font-weight: bold;
+    }
+    
+    a:hover, a:focus {
+        color: #006633; /* Green */
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    a:visited {
+        color: #D9EAFD; /* Purple */
+        font-weight: bold;
+    }
+    
+}
+.nova-round-regular {
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+   
+        font-family: "Bodoni Moda", serif;
+        background-color: var(--var1);
+  } 
+
+
+.bodoni-moda {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 40px;
+  font-style: normal;
+}
+
+.Header {
+    text-align: center;
+    padding-left: 10px;
+}
+
+section {
+    font-weight: 60px;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--var4);
+    color: var(--var1);
+    text-align: center;
+    padding: 10px;
+}
+
+div .nav {
+    font-size: 110%;
+    font-weight: bold;
+    
+}
+
+div .nav {
+    width:30%; 
+    margin: 0 35% 0 35%;
+}
+div .nav a {
+    display:block; 
+    color: black;
+    background-color: #CCCCCC; 
+    text-decoration: none;
+    padding: 5px; 
+    border: 3px solid black; 
+    text-align:center; 
+}
+div .nav a:visited { 
+    display:block; 
+    color: var(--var3);
+    background-color: #CCCCCC; 
+    text-decoration: none;
+    padding: 5px; 
+    border: 3px solid black
+}
+div .nav a:hover, p .nav a:focus {
+    display:block; 
+    color: var(--var2);
+    background-color:black; 
+    text-decoration: none;
+    padding:5px; 
+    border: 3px solid white;
+}
+
+h1 {
+    float:left;
+}
+a, .sources {
+    color: black;
+}
