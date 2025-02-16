@@ -1,0 +1,143 @@
+:root {
+    --var1: #FFEBD3;
+    --var2: #FFB4AC;
+    --var3: #679186;
+    --var4: #264E70;
+}
+
+/* Basic styling for the navigation bar */
+nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0
+}
+
+.NavBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 130px;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+    color: #2E2D4D;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-size: large;
+}
+
+/* Change the color when hovering over a link */
+nav a:hover {
+    background-color: #575757;;
+    border-radius: 5px;
+}
+
+/* Add an active class for the current page */
+nav a.active {
+    background-color: #04AA6D;
+    border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+a {
+    color: #2E2D4D;
+    text-decoration: none;
+    font-family: "Nova Round", system-ui;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 14px 20px;
+}
+
+.nova-round-regular {
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+
+    font-family: "Bodoni Moda", serif;
+    background-color: var(--var1);
+} 
+
+
+.bodoni-moda {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
+}
+
+section {
+    font-weight: 60px;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--var4);
+    color: var(--var1);
+    text-align: center;
+    padding: 10px;
+}
+
+#photo img {
+    width: 200px;
+    height: auto;
+}
+
+#photo {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+h3 .relative{
+    position: relative;
+    right: 20px;
+}
+
+h1 {
+    position: absolute;
+    right: 20px;
+}
+
+a:hover {
+    background-color: #575757;;
+    border-radius: 5px;
+}
+
+/* Add an active class for the current page */
+nav a.active {
+    background-color: #04AA6D;
+    border-radius: 5px;
+}
+
+

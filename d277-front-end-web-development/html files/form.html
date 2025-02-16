@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title> 
+    <link rel="stylesheet" href="../css files/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Nova+Round&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="NavBar">
+                    <p>
+                        <a class="nav" href="Tallahasee.html" target="_blank">
+                            Tallahassee
+                        </a>
+                    </p> 
+                    <p>
+                        <a class="nav"  href="Miami.html" target="_blank">
+                            Miami
+                        </a>
+                    </p> 
+            
+                    <p>
+                        <a class="nav" href="Tampa.html" target="_blank">
+                            Tampa
+                        </a>  
+                    </p> 
+            
+                    <p>
+                        <a class="nav" href="form.html" target="_blank">
+                            FAQ's
+                        </a> 
+                    </p> 
+                </nav>
+    
+    
+    </header>
+<section>
+            <form onsubmit="return validateForm()" class="form">
+
+<h1>
+        FAQ Form
+            </h1>
+            <img src="../images/signform_loop-output_800x600.gif" alt="sign form gif" class="signform">
+
+            <h2>Fill out the form!</h2>
+        </div>
+
+        <div class= "container">
+                <div class="cta-form">
+                    <input type="text" placeholder="FirstName" class="form__input" id="firstname" />
+                    <label for="name" class="form__label">First Name</label>
+                
+                    <input type="text" placeholder="FirstName" class="form__input" id="lastname" />
+                    <label for="name" class="form__label">Last  Name</label>
+        
+                    <input type="email" placeholder="Email" class="form__input" id="email1" />
+                    <label for="email1" class="form__label">Email</label>
+
+                    <input type="email" placeholder="ConfirmEmail" class="form__input" id="email2" />
+                    <label for="email2" class="form__label">Confirm Email</label>
+            
+                    <input type="text" placeholder="Subject" class="form__input" id="subject" />
+                    <label for="subject" class="form__label">Ask Any Questions!</label>
+                </div> 
+                <div class="subcontainer">
+            <button type="submit" id="btn">
+                <p id="btnText">Submit</p>
+                    <div class="check-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+                </button>
+                </div>
+                    </form> 
+          </section>
+        <br>
+        <br>
+    <aside>
+        <div class="aside">
+            <h2>FAQ</h2>
+            <p>Q: What is the purpose of this form?</p>
+            <p>A: The purpose of this form is to ask any questions you may have about the website.</p>
+        </div>
+    </aside>
+    
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn");
+        const btnText = document.querySelector("#btnText");
+    
+        btn.onclick = () => {
+            btnText.innerHTML = "Thanks";
+            btn.classList.add("active");
+        };
+    
+        function validateForm() {
+            let email1 = document.getElementById("email1").value;
+            let email2 = document.getElementById("email2").value;
+
+            if (email1 !== email2) {
+                alert("The emails do not match. Please double-check your input.");
+                return false; // Prevent form submission
+            } else {
+                return true; // Allow form submission
+            }
+}
+
+    </script>
+
+</body>
+</html>

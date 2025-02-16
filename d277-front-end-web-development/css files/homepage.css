@@ -1,0 +1,85 @@
+:root {
+    --var1: #FFEBD3;
+    --var2: #FFB4AC;
+    --var3: #679186;
+    --var4: #264E70;
+}
+
+
+.NavBar {
+    color: var(--var1);
+    background-color: var(--var4);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: small-caps;
+}
+a:hover {
+    background-color: var(--var3);
+    text-decoration: underline;
+}
+a {
+    color: var(--var1);
+    text-decoration: none;
+    font-family: "Nova Round", system-ui;
+}
+.nova-round-regular {
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+   
+        font-family: "Bodoni Moda", serif;
+        background-color: var(--var1);
+  } 
+
+
+.bodoni-moda {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 40px;
+  font-style: normal;
+}
+
+.Header {
+    text-align: center;
+    padding-left: 10px;
+}
+
+section {
+    font-weight: 60px;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--var4);
+    color: var(--var1);
+    text-align: center;
+    padding: 10px;
+}
+
+div .nav {
+    font-size: 110%;
+    font-weight: bold;
+    
+}
+
+div .nav {
+    width:30%; 
+    margin: 0 35% 0 35%;
+}
+
+
+h1 {
+    float:left;
+}
+a, .sources {
+    color: black;
+}
